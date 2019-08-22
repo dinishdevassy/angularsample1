@@ -1,0 +1,28 @@
+<p>displayname works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col col-4 col-sm-4"></div>
+        <div class="col col-4 col-sm-4">
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td>
+                        <input type="text" name="name" id="" [(ngModel)]="cust_name">
+                    </td>
+                </tr>
+               
+                <tr>
+                    <br>
+                    <input type="button" value="Show" (click)=display()>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                        <td><h3 *ngIf="view">Welcome {{cust_name}}</h3></td>
+                    
+                </tr>
+            </table>
+        </div>
+        <div class="col col-4 col-sm-4"></div>
+    </div>
+</div>

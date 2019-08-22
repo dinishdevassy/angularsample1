@@ -1,0 +1,22 @@
+<p>view works!</p>
+<table border=1>
+    <tr>
+    <thead>
+        <th>Project Name</th>
+        <th>Duration</th>
+        <th>End Date</th>
+    </thead>
+    </tr>
+<tr *ngFor="let p of projects;">
+    <tbody>
+        <td>{{p.name}}</td>
+        <td>{{p.duration}}</td>
+        <td>{{p.enddate}}</td>
+    </tbody>
+</tr>
+<tr>
+    <td>
+        <input type="submit" value="Submit" (click)="Add()">
+    </td>
+</tr>
+</table>

@@ -1,0 +1,26 @@
+<p>Login </p>
+<div class="container">
+    <div class="row">
+        <div class="col col-4 col-sm-4"></div>
+        <div class="col col-4 col-sm-4">
+            <table >
+                <tr>
+                    <td>user Name</td>
+                    <td><input type="text" name="uname" id=""></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="pwd" id=""></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="Login"></td>
+                    <td><a (click)="show()">SignUp</a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="col col-4 col-sm-4"></div>
+    </div>
+
+    
+</div>
+<app-signup  *ngIf="view"></app-signup>
